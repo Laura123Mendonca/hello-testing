@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+     <h2> Ejemplo de javascript</h2>   
+     <p> ingresar un numero entre 1 y 10:</p>
+
+     
+     <input id="num">
+     <input id="num1">
+     
+     <button type="button" onclick="funcion1()">Enviar</button>
+     <button type="button" onclick="sumar()">Suma</button>
+     <button type="button" onclick="restar()">Resta</button>
+     <button type="button" onclick="multiplicar()">Multiplicacion</button>
+     <button type="button" onclick="dividir()">Division</button>
+     
+     
+     
+     <p id="demo"></p>
+
+     <p id="res"></p>
+    </body>
+</html>

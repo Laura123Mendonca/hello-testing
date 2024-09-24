@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Validacion de form en frontend
+    </title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">
+        Form de registro
+    </h1>
+    <form name="RegForm" onsubmit="validacion()">
+        <p>
+            Nombre:
+            <input type="text" size="65" 
+                   name="Name" id="Name"
+                   placeholder="Juan Gomez"/>
+        </p>
+        <br />
+        <p>
+            Direccion:
+            <input type="text" size="65" 
+                   name="Address" id="Address" 
+                   placeholder="Callao 455"/>
+        </p>
+        <br />
+        <p>
+            E-mail :
+            <input type="text" size="65" 
+                   name="Email" id="Email"
+                   placeholder="demo@javierblanco.com.ar"/>
+        </p>
+        <br />
+        <p>
+            Password:
+            <input type="password" size="65" 
+                   name="Password" />
+        </p>
+        <br />
+        <br />
+        <p>
+            Elija su curso: 
+            <select value="" name="Subject">
+                <option>Select Course</option>
+                <option>BTECH</option>
+                <option>BBA</option>
+                <option>BCA</option>
+                <option>B.COM</option>
+            </select>
+        </p>
+        <p>
+            Lenguaje
+            <br>
+            <br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript"> JavaScript 
+            <input type="radio" id="python" name="fav_language" value="python"> Python
+        </p>
+        <br />
+        <br />
+        Entornos utilizados
+        <br />
+        <br />
+         <input type="checkbox" id="ide1" name="ide1" value="Visual Studio Code">
+        <label for="ide1">Visual Studio Code</label>
+        
+        <input type="checkbox" id="ide2" name="ide2" value="pycharm">
+        <label for="ide2">Pycharm</label>
+        
+        <input type="checkbox" id="ide3" name="ide3" value="netbeans">
+        <label for="ide3">Netbeans</label>
+        
+        <br />
+        <br />
+        Equipos de futbol 
+        <br />
+        <br />
+        <input type="checkbox" id="fut1" name="fut1" value="Real Madrid">
+        <label for="fut1">Real Madrid</label>
+        
+        <input type="checkbox" id="fut2" name="fut2" value="Barcelona">
+        <label for="fut2">Barcelona</label>
+        
+        <input type="checkbox" id="fut3" name="fut3" value="Bayern Munich">
+        <label for="fut3">Bayern Munich</label>
+        <br />
+        <br />
+
+        <p>
+            Commentarios:
+            <textarea cols="55" name="Comment"> </textarea>
+        </p>
+        <p>
+            <input type="submit" value="Send" 
+                   name="Submit" />
+            <input type="reset" value="Reset" 
+                   name="Reset" />
+        </p>
+    </form>
+    
+</body>
+
+</html>

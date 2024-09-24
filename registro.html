@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Validacion de form en frontend
+    </title>
+    <script src="scripts1.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">
+        Form de registro
+    </h1>
+    <form name="RegForm" onsubmit="validacion()">
+        <p>
+            Usuario:
+            <input type="text" size="65" 
+                   name="Usuario" id="Usuario"
+                   placeholder="lauracmendonca@yahoo.com.ar"/>
+
+        </p>
+        <br/>
+        <p>
+            Password:
+            <input type="password" size="65" 
+                   name="Password" id="Password"
+                   placeholder="........"/>
+        </p>
+        <br/>
+        <p>
+            Nombre:
+            <input type="text" size="65" 
+                   name="Name" id="Name"
+                   placeholder="Juan"/>
+        </p>
+        <br />
+        <p>
+            Apellido:
+            <input type="text" size="65" 
+                   name="Apellido" id="Apellido"
+                   placeholder="Gomez"/>
+        </p>
+        <br/>
+        <p>
+            DNI:
+            <input type="text" size="65" 
+                   name="dni" id="dni"
+                   placeholder="27259725"/>
+        </p>
+        <br/>
+        <p>
+            Fecha de Nacimiento:
+            <input type="text" size="65" 
+                   name="Password" id="Password"
+                   placeholder="20/05/1979"/>
+        </p>
+        <br/>
+        <p>
+            Genero:
+            <br>
+            <br>
+            <input type="radio" id="masculino" name="fav_language" value="masculino"> Masculino
+            <input type="radio" id="femenino" name="fav_language" value="femenino"> Femenino
+            <input type="radio" id="nobinario" name="fav_language" value="nobinario"> No Binario
+        </p>
+        <br/>
+        <p>
+            Pais:
+            <input type="text" size="65" 
+                   name="Pais" id="Pais" 
+                   placeholder="Argentina"/>
+        </p>
+        <br />
+        <p>
+            Provincia:
+            <input type="text" size="65" 
+                   name="Provincia" id="Provincia" 
+                   placeholder="Buenos Aires"/>
+        </p>
+        <br />
+        <p>
+            Localidad:
+            <input type="text" size="65" 
+                   name="Localidad" id="Localidad" 
+                   placeholder="Ciudad Autonoma de Buenos Aires"/>
+        </p>
+        <br />
+        <p>
+            Direccion:
+            <input type="text" size="65" 
+                   name="Address" id="Address" 
+                   placeholder="Callao 455"/>
+        </p>
+        <br />
+        <p>
+            Telefono:
+            <input type="text" size="65" 
+                   name="Telefono" id="Telefono" 
+                   placeholder="1141637189"/>
+        </p>
+        <br />
+        <p>
+            Estado Civil:
+            <br>
+            <br>
+            <input type="radio" id="soltero" name="fav_language" value="soltero"> Soltero
+            <input type="radio" id="casado" name="fav_language" value="casado"> Casado
+            <input type="radio" id="divorciado" name="fav_language" value="divorciado"> Divorciado
+        </p>
+        <br/>
+        <p>
+            Licencia de Conducir:
+            <br>
+            <br>
+            <input type="radio" id="si" name="fav_language" value="si"> Si
+            <input type="radio" id="no" name="fav_language" value="no"> No
+        </p>
+        <br/>
+        <p>
+            Situacion Laboral: 
+            <select value="" name="Subject">
+                <option>Seleccione una</option>
+                <option>Independiente</option>
+                <option>Empleado</option>
+                <option>Desempleado</option>
+                <option>Otros</option>
+            </select>
+        </p>
+        <p>
+            Otros:
+            <textarea cols="55" name="Comment"> </textarea>
+        </p>
+        <p>
+            <input type="submit" value="Send" 
+                   name="Submit" />
+            <input type="reset" value="Reset" 
+                   name="Reset" />
+        </p>
+    </form>
+    
+</body>
+
+</html>

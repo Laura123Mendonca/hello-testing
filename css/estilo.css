@@ -1,0 +1,50 @@
+body
+{
+  background:coral;  
+}
+
+
+.input {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 26px;
+    cursor: pointer;
+    display: inline-block;
+    color:blueviolet;
+    background: black;
+    border-radius: 25px;
+    width: 200px;
+    height: 100px;
+  }
+  
+  img {
+    opacity: 0.5;
+    width:100px;
+    height:400px;
+    transition: width 2s,opacity 2s;
+   
+  }
+img:hover{
+            width:200;
+            opacity: 1;
+}
+  
+  /*esta propiedades las toma cuando se le pasa el mouse por encima */
+  .form:hover {background: #eee;}
+  .login:hover {background: #990;}
+
+  
+
+  div {
+    box-sizing: border-box;
+    width: 100%;
+    border: 100px solid black;
+    float: left;
+    align-content: center;
+    align-items: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;}

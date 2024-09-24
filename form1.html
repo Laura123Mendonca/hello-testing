@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>validacion de form en frontend
+    </title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;"> 
+        Form de registro
+    </h1>
+    <form name="RegForm" onsubmit="validacion()">
+        <p>
+            Nombre:
+            <input type="text" size="65"
+                   name="Name" id="Name"
+                   placeholder="Juan Gomez"/>
+        </p>          
+        <br/>
+        <p>
+            Direccion:
+            <input type="text" size="65"
+                   name="Address" id="Address"
+                   placeholder="Callao 567"/>
+        </p>
+        <br/>
+        <p>
+            E-mail:
+            <input type="text" size="65"
+                   name="Email" id="Email"
+                   placeholder="lauracmendonca@yahoo.com.ar"/>
+        </p>
+        <br/>
+        <p>
+            Password:
+            <input type="password" size="65"
+                name="Password" id="Password"
+                placeholder="...."/>
+            
+        </p>
+        <br/>
+        <br/>
+        <p>
+            Operacion
+            <br>
+            <br>
+            <input type="radio" id="Si" name="fav_language" value="Si">Si
+            <input type="radio" id="No" name="fav_language" value="No">No
+        </p>
+        <br/>
+        <br/>
+        <p> 
+            Elija su tratamiento:
+            <select value="" name="Subject">
+                <option>Select Treatment</option>
+                <option>Corporales</option>
+                <option>Faciales</option>
+        </select>
+        </p> 
+        <br/>
+        <br/>
+        Tratamientos utilizados
+        <br/>
+        <br/>
+         <input type="checkbox" id="ide1" name="ide1" value="Tratamiento de Colageno">
+         <label for="ide1">Tratamiento de Colageno</label>
+
+         <input type="checkbox" id="ide2" name="ide2" value="Tratamiento con acido Hialuronico">
+         <label for="ide2">Tratamiento con acido Hialuronico</label>
+
+         <input type="checkbox" id="ide3" name="ide3" value="Tratamiento con vit.C"> 
+         <label for="ide3">Tratamiento con vit.C</label>
+        <br/>
+        <br/>
+        <p>
+            Commentarios:
+            <textarea cols="55" name="Comment"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Send"
+                   name="Submit"/>
+            <input type="reset" value="Reset"     
+                   name="Reset" />
+        </p>    
+
+    
+
+    </form>
+ </body>
+</html>
