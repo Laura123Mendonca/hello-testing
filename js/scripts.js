@@ -1,6 +1,45 @@
-function funcion1(){}
+$(document).ready(function()
 
-/*let x;
+{
+    insertar_registro();
+})
+
+function  insertar_registro()
+{
+    var usuario=$('#Usuario').val()
+ //vamos a definir el codigo correspondiente al evento click en el boton
+   $(document).on('click','#btn_enviar',function()
+   {
+    // aca vamos hacer la validacion de front end
+    // si la validacion dio correcta vamos a ejecutar una llamada ajax
+    // la llamada ajax va a enviar los datos del frontend hacia el backend
+    $.ajax(
+    {
+        url : 'insertar.php',
+        method : 'post',
+        data : {uuser:usuario,upassword:password,unombre:nombre,uapellido:apellido}
+        //uuser:pepe en el input ingrese pepe
+    }
+
+
+
+
+    )
+
+   }
+
+)
+
+}
+
+
+
+
+
+
+function funcion1()
+{ 
+let x;
 x=parseInt(document.getElementById("num").value);
 let text;
 if ( x<1 || x>10)
@@ -93,7 +132,7 @@ function sumar(){
                 }
                 res= x/p;
                 document.getElementById("res").innerHTML=res.toString();
-                }*/
+                }
             
                 function validacion()
                 {
@@ -138,7 +177,7 @@ function sumar(){
                     return re.test(password);
                     
                 }
-              /*  function validacion()
+               function validacion()
                 {
                     var  nombre = document.getElementById("Name").value;
                     var  direccion = document.getElementById("Address").value;
@@ -184,7 +223,7 @@ function sumar(){
                     var re = /\S+@\S+\.\S+/;
                     return re.test(email);
                   }
-                /*
+                
                 function funcion1() {
                     //Toma el valor del input con el id="num" y lo guarda en la variable x
                     let x;  // define una variable llamada x 
