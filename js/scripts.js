@@ -37,7 +37,9 @@ function  insertar_registro()
     {
         url : 'insertar.php',
         method : 'post',
-        data : {uuser:usuario,upassword:password,unombre:nombre,uapellido:apellido}
+        data : {uuser:usuario,upassword:password,unombre:nombre,uapellido:apellido,udni:dni,
+               ufechadenacimiento:fechaDeNacimiento,umasculino:masculino,ufemino:femenino,unobinario:nobinario,
+               upais:pais,uprovincia:provincia,ulocalidad:localidad,uadress:adress,utelefono:telefono,}
         //uuser:pepe en el input ingrese pepe
     }
 
