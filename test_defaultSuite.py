@@ -30,7 +30,7 @@ class TestDefaultSuite():
     self.driver.find_element(By.LINK_TEXT, "Maquillaje").click()
     self.driver.find_element(By.CSS_SELECTOR, ".itemList:nth-child(2) .catItemHeader a").click()
     self.driver.find_element(By.CSS_SELECTOR, ".tag_maquillaje:nth-child(2)").click()
-  
+
 test = TestDefaultSuite()
 test.setup_method(None)
 test.test_testvivianabusto()
